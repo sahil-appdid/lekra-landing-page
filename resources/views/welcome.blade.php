@@ -243,8 +243,8 @@
             <div class="row hero-row">
 
                 <div class="col-lg-6">
-                    <span class="section-heading" style="font-size: 48px;">STEP INTO</span><br>
-                    <h3 class="section-heading" style="font-size: 96px; line-height:40px;">ELEGANCE</h3>
+                    <span class="section-heading elegence-step-text">STEP INTO</span><br>
+                    <h3 class="section-heading elegence-text">ELEGANCE</h3>
                 </div>
 
                 <div class="col-lg-6">
