@@ -49,11 +49,11 @@
             <hr class="nav-divider" />
 
             <!-- Hero Content -->
-            <div class="container py-5 px-0">
+            <div class="container py-5">
                 <div class="row">
 
                     <!-- Left text -->
-                    <div class="col-md-6 mt-5 pt-5">
+                    <div class="col-md-6 hero-section-left">
                         <h1 class="hero-title heading">
                             Expertly crafted to<br>
                             embody confidence and<br>
@@ -63,7 +63,7 @@
                             Explore premium leather goods, designed to elevate your everyday style.
                         </p>
 
-                        <div class="d-flex gap-3 mt-4">
+                        <div class="d-flex gap-3 mt-4 hero-section-app-links">
                             <a href="https://play.google.com/store/apps/details?id=com.lekraInternational"
                                 target="_blank">
                                 <img src="{{ asset('site/images/playstore.svg') }}" width="130"
@@ -91,66 +91,60 @@
 
     {{-- descover key features section --}}
 
-    <section class="discover-section py-5" id="features">
-        <div class="container pt-5 px-0">
+    <section class="discover-section" id="features">
+        <div class="container top-bottom-padding">
 
-
-
-            <div class="section-head pb-5 mb-5">
+            <div class="section-head large-padding">
                 <span class="small-ornament left"></span>
                 <h2 class="section-heading">Discover the key features</h2>
                 <span class="small-ornament right"></span>
             </div>
 
-
-            <div class="container">
-                <div class="hero-row">
-                    <div class="row best-seller-section">
-                        <div class="faded-circle"
-                            style="width: 350px; height: 350px; left: -150px; top: -150px; background-color: #f5ada9;">
+            <div class="hero-row">
+                <div class="row best-seller-section">
+                    <div class="faded-circle"
+                        style="width: 350px; height: 350px; left: -150px; top: -150px; background-color: #f5ada9;">
+                    </div>
+                    <div class="col-lg-6 phone-img-container">
+                        <div class="phone-wrap">
+                            <img src="{{ asset('site/images/best-seller-phone.svg') }}" alt="phone mockup"
+                                class="phone-img">
+                            <div class="phone-badge" aria-hidden="true"></div>
                         </div>
-                        <div class="col-lg-6">
-                            <div class="phone-wrap">
-                                <img src="{{ asset('site/images/best-seller-phone.svg') }}" alt="phone mockup"
-                                    class="phone-img">
-                                <div class="phone-badge" aria-hidden="true"></div>
-                            </div>
-                        </div>
+                    </div>
 
 
-                        <div class="col-lg-6">
-                            <div class="content-card pt-5">
-                                <h3 class="small-heading">Our Best Sellers</h3>
-                                <p class="lead">
-                                    Discover the pieces our customers love the most. From premium handcrafted leather
-                                    bags
-                                    and
-                                    wallets to timeless belts and accessories, our best sellers reflect the perfect
-                                    blend of
-                                    style, durability, and craftsmanship. Each item is made from high-quality genuine
-                                    leather,
-                                    designed to elevate your everyday look and stand the test of time.
-                                </p>
+                    <div class="col-lg-6">
+                        <div class="content-card">
+                            <h3 class="small-heading">Our Best Sellers</h3>
+                            <p class="lead">
+                                Discover the pieces our customers love the most. From premium handcrafted leather
+                                bags
+                                and
+                                wallets to timeless belts and accessories, our best sellers reflect the perfect
+                                blend of
+                                style, durability, and craftsmanship. Each item is made from high-quality genuine
+                                leather,
+                                designed to elevate your everyday look and stand the test of time.
+                            </p>
 
-                                <p class="lead" style="margin-bottom: 1.4rem;">
-                                    Shop the favorites that have earned their spot at the top — because true quality
-                                    never
-                                    goes
-                                    out of style.
-                                </p>
-                            </div>
+                            <p class="lead">
+                                Shop the favorites that have earned their spot at the top — because true quality
+                                never
+                                goes
+                                out of style.
+                            </p>
                         </div>
                     </div>
                 </div>
-
             </div>
 
             {{-- order and summary section --}}
 
-            <div class="row hero-row">
+            <div class="row hero-row order-summary-container">
 
                 <div class="col-lg-6">
-                    <div class="content-card pt-5">
+                    <div class="content-card">
                         <h3 class="small-heading">Orders & Summary</h3>
                         <p class="lead">
                             Stay on top of your purchases with ease. View your past and current orders, track shipping
@@ -158,11 +152,11 @@
                             overview of what you’ve bought, where it’s headed, and when it will arrive.
                         </p>
 
-                        <p class="lead" style="margin-bottom: 1.4rem;">
+                        <p class="lead">
                             Because a seamless shopping experience doesn’t end at checkout.
                         </p>
 
-                        <div class="d-flex pt-2" style="gap:20px;">
+                        <div class="d-flex flex-wrap pt-2 order-summary-product-container" style="gap:20px;">
                             <div class="image-text text-center">
                                 <img src="{{ asset('site/images/order-summary-img1.svg') }}" alt="">
                                 <p>mobile & Tab</p>
@@ -191,7 +185,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-6">
+                <div class="col-lg-6 phone-img-container">
                     <div class="phone-wrap">
                         <img src="{{ asset('site/images/order-summary-phone.svg') }}" alt="phone mockup"
                             class="phone-img">
@@ -204,7 +198,7 @@
 
             <div class="row hero-row">
 
-                <div class="col-lg-6">
+                <div class="col-lg-6 phone-img-container">
                     <div class="phone-wrap">
 
                         <img src="{{ asset('site/images/login-via-phone.svg') }}" alt="phone mockup"
@@ -215,7 +209,7 @@
                 </div>
 
                 <div class="col-lg-6">
-                    <div class="content-card pt-5">
+                    <div class="content-card">
                         <h3 class="small-heading">Log In via Mobile Number</h3>
                         <p class="lead">
                             Access your account quickly and securely using your mobile number. No need to remember
@@ -223,7 +217,7 @@
                             and safe login experience designed for your convenience.
                         </p>
 
-                        <p class="lead" style="margin-bottom: 1.4rem;">
+                        <p class="lead">
                             Shop the favorites that have earned their spot at the top — because true quality never goes
                             out of style.
                         </p>
@@ -237,34 +231,41 @@
 
     {{-- step into elegence section --}}
 
-    <section class="step-into-elegence" id="about" style="background: url({{ asset('site/images/elegence.png') }}) right top / cover no-repeat, linear-gradient(90deg,rgba(246, 219, 173, 1) 0%, rgba(245, 213, 166, 1) 19%, rgba(241, 210, 160, 1) 35%, rgba(236, 200, 149, 1) 51%, rgba(228, 191, 137, 1) 64%, rgba(215, 179, 126, 1) 76%, rgba(208, 172, 120, 1) 88%, rgba(204, 169, 117, 1) 100%); padding-bottom:700px !important;">
+    <section class="step-into-elegence" id="about"
+        style="background: url({{ asset('site/images/elegence.png') }}) top center / cover no-repeat, linear-gradient(90deg,rgba(246, 219, 173, 1) 0%, rgba(245, 213, 166, 1) 19%, rgba(241, 210, 160, 1) 35%, rgba(236, 200, 149, 1) 51%, rgba(228, 191, 137, 1) 64%, rgba(215, 179, 126, 1) 76%, rgba(208, 172, 120, 1) 88%, rgba(204, 169, 117, 1) 100%); padding-bottom:700px !important;">
 
-        <div class="container py-4 px-0"  >
-            <div class="row hero-row">
+        <div class="container py-4 px-0">
 
-                <div class="col-lg-6">
-                    <span class="section-heading elegence-step-text">STEP INTO</span><br>
-                    <h3 class="section-heading elegence-text">ELEGANCE</h3>
-                </div>
+            <div>
+                <div class="d-flex gap-x-5 justify-content-between hero-row">
 
-                <div class="col-lg-6">
-                    <div class="content-card">
-                        <p class="lead py-3">
-                            Discover handcrafted leather goods designed for those who value quality, detail, and
-                            enduring style. Each piece tells a story of tradition, craftsmanship, and sophistication.
-                        </p>
+                    <div class="">
+                        <span class="section-heading elegence-step-text">STEP INTO</span><br>
+                        <h3 class="section-heading elegence-text">ELEGANCE</h3>
                     </div>
-                </div>
 
+                    <div class="elegence-text-section" style="width: 500px">
+                        <div class="content-card">
+                            <p class="lead py-3">
+                                Discover handcrafted leather goods designed for those who value quality, detail, and
+                                enduring style. Each piece tells a story of tradition, craftsmanship, and
+                                sophistication.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
             </div>
+
+
         </div>
 
     </section>
 
     {{-- faq section --}}
-
-    <section class="discover-section py-5" id="faq">
-        <div class="container px-0">
+    {{-- this section is hidden as adviced --}}
+    {{-- <section class="discover-section top-bottom-padding" id="faq">
+        <div class="container">
 
 
             <div class="section-head">
@@ -371,12 +372,13 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
     {{-- testimonial section --}}
 
-    <section class="discover-section hero-row testimonials-section py-5" id="testimonial" style="background-color: rgba(119, 48, 27, 0.05);" >
-        <div class="px-0" style="overflow: hidden;">
+    <section class="discover-section hero-row testimonials-section top-bottom-padding" id="testimonial"
+        style="background-color: rgba(119, 48, 27, 0.05);">
+        <div class="" style="overflow: hidden;">
 
             <div class="section-head">
                 <span class="small-ornament left"></span>
@@ -412,7 +414,7 @@
                                         <p class="text-muted small mb-0 user-role">Home Maker</p>
                                         <p class="text-muted small mb-0 user-location">New Jersey, USA</p>
                                     </div>
-                                    <img src="path/to/gauri-patel.jpg" alt="Gauri Patel"
+                                    <img src="{{ asset('site/images/testimonial1.png') }}" alt="Gauri Patel"
                                         class="user-avatar rounded-circle me-3">
                                 </div>
                             </div>
@@ -436,7 +438,7 @@
                                         <p class="text-muted small mb-0 user-role">Assistant Manager</p>
                                         <p class="text-muted small mb-0 user-location">Delhi, India</p>
                                     </div>
-                                    <img src="path/to/archita-vats.jpg" alt="Archita Vats"
+                                    <img src="{{ asset('site/images/testimonial2.png') }}" alt="Archita Vats"
                                         class="user-avatar rounded-circle me-3">
                                 </div>
                             </div>
@@ -462,7 +464,7 @@
                                         <p class="text-muted small mb-0 user-role">Web Developer</p>
                                         <p class="text-muted small mb-0 user-location">Mumbai, India</p>
                                     </div>
-                                    <img src="path/to/anmol-abrol.jpg" alt="Anmol Abrol"
+                                    <img src="{{ asset('site/images/testimonial3.png') }}" alt="Anmol Abrol"
                                         class="user-avatar rounded-circle me-3">
                                 </div>
                             </div>
@@ -488,7 +490,117 @@
                                         <p class="text-muted small mb-0 user-role">Web Developer</p>
                                         <p class="text-muted small mb-0 user-location">Mumbai, India</p>
                                     </div>
-                                    <img src="path/to/anmol-abrol.jpg" alt="Anmol Abrol"
+                                    <img src="{{ asset('site/images/testimonial1.png') }}" alt="Anmol Abrol"
+                                        class="user-avatar rounded-circle me-3">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="swiper testimonials-slider swiper-reverse slider">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide p-2">
+                            <div class="card testimonial-card h-100 shadow-sm border-0 testimonial-card-round-border">
+                                <div class="card-body">
+                                    <div class="rating mb-3">
+                                        <span class="star">&#9733;</span>
+                                        <span class="star">&#9733;</span>
+                                        <span class="star">&#9733;</span>
+                                        <span class="star">&#9733;</span>
+                                        <span class="star half-star">&#9733;</span>
+                                    </div>
+                                    <p class="card-text">"As a first-time mom, this app has been a lifesaver. Easy to
+                                        use,
+                                        informative, and it feels like a friend guiding me through each trimester.
+                                        Thanks,
+                                        team!"</p>
+                                </div>
+                                <div
+                                    class="card-footer bg-white border-0 d-flex align-items-center justify-content-between testimonial-card-round-border">
+                                    <div>
+                                        <h6 class="mb-0 user-name">Gauri Patel</h6>
+                                        <p class="text-muted small mb-0 user-role">Home Maker</p>
+                                        <p class="text-muted small mb-0 user-location">New Jersey, USA</p>
+                                    </div>
+                                    <img src="{{ asset('site/images/testimonial3.png') }}" alt="Gauri Patel"
+                                        class="user-avatar rounded-circle me-3">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide p-2">
+                            <div class="card testimonial-card h-100 shadow-sm border-0 testimonial-card-round-border">
+                                <div class="card-body">
+                                    <div class="rating mb-3">
+                                        <span class="star">&#9733;</span><span class="star">&#9733;</span><span
+                                            class="star">&#9733;</span><span class="star">&#9733;</span><span
+                                            class="star">&#9733;</span>
+                                    </div>
+                                    <p class="card-text">"Impressed with the beta version! The design is sleek, and the
+                                        daily insights have been spot on."</p>
+                                </div>
+                                <div
+                                    class="card-footer bg-white border-0 d-flex align-items-center justify-content-between testimonial-card-round-border">
+                                    <div>
+                                        <h6 class="mb-0 user-name">Archita Vats</h6>
+                                        <p class="text-muted small mb-0 user-role">Assistant Manager</p>
+                                        <p class="text-muted small mb-0 user-location">Delhi, India</p>
+                                    </div>
+                                    <img src="{{ asset('site/images/testimonial2.png') }}" alt="Archita Vats"
+                                        class="user-avatar rounded-circle me-3">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide p-2">
+                            <div class="card testimonial-card h-100 shadow-sm border-0 testimonial-card-round-border">
+                                <div class="card-body">
+                                    <div class="rating mb-3">
+                                        <span class="star">&#9733;</span><span class="star">&#9733;</span><span
+                                            class="star">&#9733;</span><span class="star">&#9733;</span><span
+                                            class="star half-star">&#9733;</span>
+                                    </div>
+                                    <p class="card-text">"A must-have for every expectant mother! The features are
+                                        incredibly helpful, and the design is such a pleasure to touch. Thank you for
+                                        making
+                                        my pregnancy journey enjoyable!"</p>
+                                </div>
+                                <div
+                                    class="card-footer bg-white border-0 d-flex align-items-center justify-content-between testimonial-card-round-border">
+                                    <div>
+                                        <h6 class="mb-0 user-name">Anmol Abrol</h6>
+                                        <p class="text-muted small mb-0 user-role">Web Developer</p>
+                                        <p class="text-muted small mb-0 user-location">Mumbai, India</p>
+                                    </div>
+                                    <img src="{{ asset('site/images/testimonial1.png') }}" alt="Anmol Abrol"
+                                        class="user-avatar rounded-circle me-3">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide p-2">
+                            <div class="card testimonial-card h-100 shadow-sm border-0 testimonial-card-round-border">
+                                <div class="card-body">
+                                    <div class="rating mb-3">
+                                        <span class="star">&#9733;</span><span class="star">&#9733;</span><span
+                                            class="star">&#9733;</span><span class="star">&#9733;</span><span
+                                            class="star half-star">&#9733;</span>
+                                    </div>
+                                    <p class="card-text">"A must-have for every expectant mother! The features are
+                                        incredibly helpful, and the design is such a pleasure to touch. Thank you for
+                                        making
+                                        my pregnancy journey enjoyable!"</p>
+                                </div>
+                                <div
+                                    class="card-footer bg-white border-0 d-flex align-items-center justify-content-between testimonial-card-round-border">
+                                    <div>
+                                        <h6 class="mb-0 user-name">Anmol Abrol</h6>
+                                        <p class="text-muted small mb-0 user-role">Web Developer</p>
+                                        <p class="text-muted small mb-0 user-location">Mumbai, India</p>
+                                    </div>
+                                    <img src="{{ asset('site/images/testimonial3.png') }}" alt="Anmol Abrol"
                                         class="user-avatar rounded-circle me-3">
                                 </div>
                             </div>
@@ -502,10 +614,10 @@
 
     {{-- contact us section --}}
 
-    <section class="discover-section py-5" id="contactus">
-        <div class="container px-0">
+    <section class="discover-section top-bottom-padding" id="contactus">
+        <div class="container">
 
-            <div class="row hero-row">
+            <div class="row hero-row py-0">
                 <div class="col-lg-6">
 
                     <div class="section-head">
@@ -514,7 +626,7 @@
                         <span class="small-ornament right"></span>
                     </div>
 
-                    <p class="pt-3 text-center" style="font-size: 20px">
+                    <p class="pt-3 text-center contact-text">
                         We are honoured to receive your comments and suggestions. Please feel free to contact us :
                     </p>
 
@@ -556,7 +668,7 @@
 
     <footer class="footer-section">
         <div class="container py-5">
-            <div class="row align-items-start">
+            <div class="row align-items-start footer-container">
 
                 <div class="col-md-4 col-12 mb-4 mb-md-0 d-flex flex-column align-items-center">
                     <div class="d-flex flex-column">
@@ -583,7 +695,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-4 col-12 d-flex flex-column align-items-center download-section">
+                <div class="col-md-4 col-12 d-flex download-section">
                     <a href="#" class="app-store-link mb-3">
                         <img src="{{ asset('site/images/appstore.svg') }}" width="130" style="cursor: pointer;">
                     </a>
@@ -601,30 +713,46 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            const swiper = new Swiper('.testimonials-slider', {
-                direction: 'horizontal',
-                loop: true,
-                slidesPerView: 1.2,
 
-                spaceBetween: 20,
+           const swiper1 = new Swiper('.testimonials-slider:not(.swiper-reverse)', {
+            loop: true,
+            slidesPerView: 3,
+            spaceBetween: 30,
 
-                autoplay: {
-                    delay: 1000,
-                    disableOnInteraction: false,
-                },
+            freeMode: {
+                enabled: true,
+                momentum: false,
+            },
 
-                breakpoints: {
-                    768: {
-                        slidesPerView: 2.2,
-                        spaceBetween: 30
-                    },
+            autoplay: {
+                delay: 0,
+                disableOnInteraction: false,
+            },
 
-                    992: {
-                        slidesPerView: 3.5,
-                        spaceBetween: 30
-                    }
-                },
-            });
+            speed: 3500,
+        });
+
+
+          const swiper2 = new Swiper('.testimonials-slider.swiper-reverse', {
+            loop: true,
+            slidesPerView: 3,
+            spaceBetween: 30,
+
+            freeMode: {
+                enabled: true,
+                momentum: false,
+            },
+
+            autoplay: {
+                delay: 0,
+                reverseDirection: true,
+                disableOnInteraction: false,
+            },
+
+            speed: 3500,
+        });
+
+
         });
     </script>
 </body>

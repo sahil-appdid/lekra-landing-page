@@ -30,11 +30,12 @@ body {
 
 .section-heading {
     font-family: var(--font-heading);
-    /* font-size: 56px; */
-    font-size: 3.5rem;
+    font-size: 56px;
+    /* font-size: 3.5rem; */
     font-weight: 700;
     color: var(--color-text);
     position: relative;
+    text-align: center;
 }
 
 .heading {
@@ -44,8 +45,8 @@ body {
 .small-heading {
     font-family: var(--font-heading);
     font-weight: 700;
-    /* font-size: 48px; */
-    font-size: 3rem;
+    font-size: 48px;
+    /* font-size: 3rem; */
     padding-bottom: 30px;
 }
 
@@ -69,6 +70,11 @@ a {
     padding-bottom: 60px;
     position: relative;
     overflow: hidden;
+}
+
+.hero-section-left {
+    margin-top: 50px;
+    padding-top: 50px;
 }
 
 .hero-title {
@@ -133,6 +139,16 @@ img.phone-img {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.large-padding{
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
+
+.top-bottom-padding{
+    padding-bottom: 50px;
+    padding-top: 50px;
 }
 
 .small-ornament {
@@ -267,7 +283,7 @@ img.phone-img {
 
 .swiper {
     width: 100%;
-    height: 300px;
+    overflow: unset !important;
 }
 
 .testimonials-section .testimonial-card-round-border {
@@ -339,35 +355,10 @@ label {
 
 /* footer section */
 
-footer {
-    background-color: rgba(210, 156, 109, 1);
-}
-
 .footer-section {
     background-color: rgba(210, 156, 109, 1);
     color: #4b3a2c;
     font-family: Arial, sans-serif;
-}
-
-.logo-icon {
-    display: inline-block;
-    width: 25px;
-    height: 35px;
-    background-color: #7d4c32;
-    clip-path: polygon(
-        50% 0%,
-        100% 0%,
-        100% 100%,
-        75% 100%,
-        75% 25%,
-        50% 25%,
-        50% 100%,
-        0% 100%,
-        0% 0%,
-        25% 0%,
-        25% 75%,
-        50% 75%
-    ); /* A simple 'K' shape approximation */
 }
 
 .logo-text {
@@ -419,6 +410,35 @@ footer {
     text-transform: uppercase;
 }
 
+.content-card{
+    padding-top: 30px;
+}
+
+.testimonials-section .container{
+    padding: 0px !important;
+}
+
+.contact-text{
+    font-size: 20px;
+}
+
+.download-section{
+    flex-direction: column;
+    align-items: center;
+}
+
+.phone-img-container{
+    display: grid;
+    justify-content: center;
+}
+
+
+@media (max-width: 991px) {
+    .order-summary-container{
+        flex-direction: column-reverse !important;
+    }
+}
+
 @media (max-width: 768px) {
     .elegence-step-text {
         font-size: 20px;
@@ -432,4 +452,110 @@ footer {
     img.phone-img {
         height: 400px;
     }
+
+    .hero-section-left {
+        margin-top: 0px;
+        padding-top: 0px;
+        display: grid;
+        justify-content: center;
+    }
+
+    .hero-title {
+        font-size: 30px;
+    }
+
+    .hero-sub {
+        font-size: 12px;
+    }
+
+    .hero-section-app-links{
+        justify-content: center;
+    }
+
+    .hero-phone-img{
+        margin-top: 20px;
+        width: 231px;
+    }
+
+    .section-heading{
+        font-size: 30px;
+    }
+
+    .small-ornament{
+        height: 4px;
+    }
+
+    .hero-section{
+        padding: unset;
+    }
+
+    .section-head{
+        margin-bottom: unset;
+        padding-bottom: unset;
+    }
+
+    .small-heading{
+        font-size: 30px;
+        padding-bottom: 15px;
+    }
+
+    .content-card{
+        padding-top: 15px !important;
+    }
+
+    .lead{
+        font-size: 12px !important;
+    }
+
+    .order-summary-container{
+        flex-direction: column-reverse !important;
+    }
+
+    .order-summary-product-container p{
+        font-size: 10px;
+    }
+
+    .step-into-elegence{
+        display: none;
+    }
+
+    .testimonials-section .container{
+        padding: 12px !important;
+    }
+
+    #contactus{
+        padding-bottom: 50px !important;
+    }
+
+    .footer-container{
+        flex-direction: column-reverse;
+    }
+
+    .contact-text{
+        font-size: 12px;
+    }
+
+    #contactus .container .hero-row{
+        gap: 30px;
+    }
+
 }
+
+@media (max-width: 1199px) and (min-width: 768px) {
+
+    .step-into-elegence .container .hero-row{
+        flex-wrap: wrap !important;
+    }
+
+}
+
+@media (max-width: 991px) and (min-width: 768px){
+    .hero-title{
+        font-size: 40px;
+    }
+}
+
+.step-into-elegence .container .hero-row{
+    column-gap: 30px;
+}
+
