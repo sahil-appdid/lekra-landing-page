@@ -37,7 +37,7 @@
                             <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
                             <li class="nav-item"><a href="#features" class="nav-link">Features</a></li>
                             <li class="nav-item"><a href="#testimonial" class="nav-link">Testimonial</a></li>
-                            <li class="nav-item"><a href="#faq" class="nav-link">FAQs</a></li>
+                            {{-- <li class="nav-item"><a href="#faq" class="nav-link">FAQs</a></li> --}}
                             <li class="nav-item"><a href="#contactus" class="nav-link">Contact Us</a></li>
                         </ul>
                     </div>
@@ -692,11 +692,11 @@
 
                 <div class="col-md-4 col-12 mb-4 mb-md-0 d-flex align-items-center flex-column nav-links">
                     <div class="d-flex flex-column">
-                        <a href="#" class="footer-link">About us</a>
-                        <a href="#" class="footer-link">Contact us</a>
-                        <a href="#" class="footer-link">Features</a>
-                        <a href="#" class="footer-link">FAQs</a>
-                        <a href="#" class="footer-link">Testimonials</a>
+                        <a href="#about" class="footer-link">About us</a>
+                        <a href="#contactus" class="footer-link">Contact us</a>
+                        <a href="#features" class="footer-link">Features</a>
+                        {{-- <a href="#faq" class="footer-link">FAQs</a> --}}
+                        <a href="#testimonial" class="footer-link">Testimonials</a>
                         <a href="#" class="footer-link">Terms & Condition</a>
                         <a href="#" class="footer-link">Privacy Policy</a>
                     </div>
@@ -731,7 +731,12 @@
                     momentum: false,
                 },
 
-                breakpoints: {
+                autoplay: {
+                    delay: 0,
+                    disableOnInteraction: false,
+                },
+
+                 breakpoints: {
                     0: {
                         slidesPerView: 1,
                         spaceBetween: 15,
@@ -748,11 +753,6 @@
                         slidesPerView: 3.2,
                         spaceBetween: 30,
                     }
-                },
-
-                autoplay: {
-                    delay: 0,
-                    disableOnInteraction: false,
                 },
 
                 speed: 3500,
