@@ -736,7 +736,7 @@
                     disableOnInteraction: false,
                 },
 
-                 breakpoints: {
+                breakpoints: {
                     0: {
                         slidesPerView: 1,
                         spaceBetween: 15,
@@ -761,8 +761,8 @@
 
             swiper2 = new Swiper('.testimonials-slider.swiper-reverse', {
                 loop: true,
-                slidesPerView: 3,
-                spaceBetween: 20,
+                slidesPerView: 3.2,
+                spaceBetween: 30,
 
                 freeMode: {
                     enabled: true,
@@ -773,6 +773,25 @@
                     delay: 0,
                     reverseDirection: true,
                     disableOnInteraction: false,
+                },
+
+                breakpoints: {
+                    0: {
+                        slidesPerView: 1,
+                        spaceBetween: 15,
+                    },
+                    576: {
+                        slidesPerView: 1.2,
+                        spaceBetween: 20,
+                    },
+                    768: {
+                        slidesPerView: 2.2,
+                        spaceBetween: 25,
+                    },
+                    992: {
+                        slidesPerView: 3.2,
+                        spaceBetween: 30,
+                    }
                 },
 
                 speed: 3500,
