@@ -259,6 +259,10 @@ img.phone-img {
     font-size: 1.25rem;
 }
 
+.half-star{
+    color: grey;
+}
+
 /* User Avatar */
 .user-avatar {
     width: 45px;
@@ -432,6 +436,9 @@ label {
     justify-content: center;
 }
 
+.testimonials-section-container{
+overflow: hidden;
+}
 
 @media (max-width: 991px) {
     .order-summary-container{
@@ -539,6 +546,18 @@ label {
         gap: 30px;
     }
 
+    .swiper-reverse{
+        display: none !important;
+    }
+
+    .testimonials-section-container{
+        margin: 0 12px;
+    }
+
+    .download-section{
+        padding-bottom: 10px;
+    }
+
 }
 
 @media (max-width: 1199px) and (min-width: 768px) {
@@ -558,4 +577,3 @@ label {
 .step-into-elegence .container .hero-row{
     column-gap: 30px;
 }
-

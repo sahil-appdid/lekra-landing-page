@@ -24,7 +24,7 @@
             <!-- Navbar -->
             <nav class="navbar navbar-expand-lg py-3">
                 <div class="container nav-contents">
-                    <a class="navbar-brand d-flex align-items-center" href="#">
+                    <a class="navbar-brand d-flex align-items-center" href="/">
                         <img src="{{ asset('site/images/logo.png') }}" class="me-2" width="200px" alt="logo">
                     </a>
 
@@ -232,7 +232,7 @@
     {{-- step into elegence section --}}
 
     <section class="step-into-elegence" id="about"
-        style="background: url({{ asset('site/images/elegence.png') }}) top center / cover no-repeat, linear-gradient(90deg,rgba(246, 219, 173, 1) 0%, rgba(245, 213, 166, 1) 19%, rgba(241, 210, 160, 1) 35%, rgba(236, 200, 149, 1) 51%, rgba(228, 191, 137, 1) 64%, rgba(215, 179, 126, 1) 76%, rgba(208, 172, 120, 1) 88%, rgba(204, 169, 117, 1) 100%); padding-bottom:700px !important;">
+        style="background: url({{ asset('site/images/elegence.png') }}) center / cover no-repeat, linear-gradient(90deg,rgba(246, 219, 173, 1) 0%, rgba(245, 213, 166, 1) 19%, rgba(241, 210, 160, 1) 35%, rgba(236, 200, 149, 1) 51%, rgba(228, 191, 137, 1) 64%, rgba(215, 179, 126, 1) 76%, rgba(208, 172, 120, 1) 88%, rgba(204, 169, 117, 1) 100%); padding-bottom:700px !important;">
 
         <div class="container py-4 px-0">
 
@@ -378,7 +378,7 @@
 
     <section class="discover-section hero-row testimonials-section top-bottom-padding" id="testimonial"
         style="background-color: rgba(119, 48, 27, 0.05);">
-        <div class="" style="overflow: hidden;">
+        <div class="testimonials-section-container">
 
             <div class="section-head">
                 <span class="small-ornament left"></span>
@@ -497,7 +497,14 @@
                         </div>
 
                     </div>
+                    <div class="custom-swiper-nav-wrapper">
+                        <div class="swiper-button-prev custom-prev-button"></div>
+                        <div class="swiper-button-next custom-next-button"></div>
+                    </div>
                 </div>
+
+
+
                 <div class="swiper testimonials-slider swiper-reverse slider">
                     <div class="swiper-wrapper">
 
@@ -560,7 +567,7 @@
                                     <div class="rating mb-3">
                                         <span class="star">&#9733;</span><span class="star">&#9733;</span><span
                                             class="star">&#9733;</span><span class="star">&#9733;</span><span
-                                            class="star half-star">&#9733;</span>
+                                            class="star">&#9733;</span>
                                     </div>
                                     <p class="card-text">"A must-have for every expectant mother! The features are
                                         incredibly helpful, and the design is such a pleasure to touch. Thank you for
@@ -714,44 +721,62 @@
     <script>
         document.addEventListener('DOMContentLoaded', function() {
 
-           const swiper1 = new Swiper('.testimonials-slider:not(.swiper-reverse)', {
-            loop: true,
-            slidesPerView: 3,
-            spaceBetween: 30,
+            swiper1 = new Swiper('.testimonials-slider:not(.swiper-reverse)', {
+                loop: true,
+                slidesPerView: 1,
+                spaceBetween: 20,
 
-            freeMode: {
-                enabled: true,
-                momentum: false,
-            },
+                freeMode: {
+                    enabled: true,
+                    momentum: false,
+                },
 
-            autoplay: {
-                delay: 0,
-                disableOnInteraction: false,
-            },
+                breakpoints: {
+                    0: {
+                        slidesPerView: 1,
+                        spaceBetween: 15,
+                    },
+                    576: {
+                        slidesPerView: 1.2,
+                        spaceBetween: 20,
+                    },
+                    768: {
+                        slidesPerView: 2.2,
+                        spaceBetween: 25,
+                    },
+                    992: {
+                        slidesPerView: 3.2,
+                        spaceBetween: 30,
+                    }
+                },
 
-            speed: 3500,
-        });
+                autoplay: {
+                    delay: 0,
+                    disableOnInteraction: false,
+                },
+
+                speed: 3500,
+            });
 
 
-          const swiper2 = new Swiper('.testimonials-slider.swiper-reverse', {
-            loop: true,
-            slidesPerView: 3,
-            spaceBetween: 30,
+            swiper2 = new Swiper('.testimonials-slider.swiper-reverse', {
+                loop: true,
+                slidesPerView: 3,
+                spaceBetween: 20,
 
-            freeMode: {
-                enabled: true,
-                momentum: false,
-            },
+                freeMode: {
+                    enabled: true,
+                    momentum: false,
+                },
 
-            autoplay: {
-                delay: 0,
-                reverseDirection: true,
-                disableOnInteraction: false,
-            },
+                autoplay: {
+                    delay: 0,
+                    reverseDirection: true,
+                    disableOnInteraction: false,
+                },
 
-            speed: 3500,
-        });
-
+                speed: 3500,
+            });
 
         });
     </script>
