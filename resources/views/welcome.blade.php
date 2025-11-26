@@ -697,18 +697,19 @@
                         <a href="#features" class="footer-link">Features</a>
                         {{-- <a href="#faq" class="footer-link">FAQs</a> --}}
                         <a href="#testimonial" class="footer-link">Testimonials</a>
-                        <a href="#" class="footer-link">Terms & Condition</a>
-                        <a href="#" class="footer-link">Privacy Policy</a>
+                        <a href="/terms-and-condition" class="footer-link">Terms & Condition</a>
+                        <a href="/privacy-policy" class="footer-link">Privacy Policy</a>
                     </div>
                 </div>
 
                 <div class="col-md-4 col-12 d-flex download-section">
-                    <a href="#" class="app-store-link mb-3">
-                        <img src="{{ asset('site/images/appstore.svg') }}" width="130" style="cursor: pointer;">
+                    <a href="https://play.google.com/store/apps/details?id=com.lekraInternational"
+                                target="_blank" class="app-store-link mb-3">
+                        <img src="{{ asset('site/images/playstore.svg') }}" width="130" style="cursor: pointer;">
                     </a>
 
-                    <a href="#" class="google-play-link">
-                        <img src="{{ asset('site/images/playstore.svg') }}" width="130" style="cursor: pointer;">
+                    <a  href="https://apps.apple.com/in/app/lekra/id6754777170" target="_blank" class="google-play-link">
+                        <img src="{{ asset('site/images/appstore.svg') }}" width="130" style="cursor: pointer;">
                     </a>
                 </div>
 
